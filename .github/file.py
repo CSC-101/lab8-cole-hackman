@@ -1,9 +1,7 @@
 import sys
 
 def main():
-    if len(sys.argv) != 2:
-        print("Please provide a valid file name")
-        sys.exit()
+    print("The file being opened's path is:", sys.argv[1])
 
     try:
         with open(sys.argv[1], 'r') as input_file:
@@ -24,3 +22,5 @@ def main():
     except IOError:
         print("Please provide a valid file name")
         sys.exit()
+
+main()
