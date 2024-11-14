@@ -1,3 +1,12 @@
+# Reads a file specified as a command-line argument and processes each line to calculate the sum of two float values.
+
+# Parameters:
+# None, since the function expects a file to be provided as a command-line argument
+
+# Behavior:
+# The function attempts to open the specified file. For each line in the file:
+# It splits the line into two values and converts them to floats then prints their sum.
+# If a line doesn't have two values or the values can't be converted to floats, it prints an error message
 import sys
 
 def main():
